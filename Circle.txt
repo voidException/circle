@@ -1,0 +1,71 @@
+@\to function call before and to class call after variable define 
+gc\mark-clear object
+dict\{"key":null,...}
+list\['a', 1, "123",...]
+lambda
+
+corotine(create,wait){mutex, channel}
+
+instance
+typedef reutrn type == type
+
+while/for
+iterator{expiterator}
+
+try/catch throw 
+
+import/reload()/path
+
+get() return variable function type 
+
+class/creatype c++/getattr return variable function
+
+value type/int float string bool
+
+std
+int()/str -> int
+str()/object -> int
+print
+net/tcp endpoint socket accept send recv/udp endpoint socket sendto recvfrom 
+timer/time clock data addtimer removetimer 
+string/string pool
+file/file open write read (create write read) 
+serialization/write data
+rand/int float
+sort/(key, cmp)
+profile/
+graph/??????
+log/log_handle console file any
+priorityqueue(cmp,key)\push pop
+queue\push pop
+stack\push pop
+uuid
+
+runtime
+symbol/call list, variable list, class list
+stack/save load/context(call(tuple), next)
+tuple
+call tuple(tuple&)
+
+(corotine save stack
+resume load stack)
+
+parser
+ast
+to c++
+to binary
+
+circlevm
+
+monad
+object call(object)
+
+
+
+
+
+
+
+
+
+
