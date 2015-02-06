@@ -1,47 +1,32 @@
 /*
- * context.h
+ * string.h
  *
  *  Created on: 2014-10-15
  *      Author: qianqians
  */
-#ifndef _context_h
-#define _context_h
+#ifndef _string_h
+#define _string_h
 
-#include <boost/function.hpp>
-#include <boost/shared_ptr.hpp>
+#include <unordered_map>
+#include "object.h"
 
-#ifdef _WINDOWS
-#include <Windows.h>
-#endif
+namespace circle{
 
-namespace Fossilizid{
-namespace context{
+class string : public object{
+public:
 
-#ifdef _WINDOWS
-typedef LPVOID context;
-#endif
 
-/*
- * convert current thread to context
- */
-inline context makecontext(){ return ConvertThreadToFiber(0); }
+private:
+	std::string * str;
 
-/*
- * create a new context
- */
-context getcontext(boost::function<void()> fn);
+};
 
-/*
- * release context
- */
-void closecontext(context ct);
+class stringpool{
+public:
+	std::unordered_map<std::string *, string * > pool;
 
-/*
- * switch to a context
- */
-void yield(context ct);
+};
 
-} /* namespace context */
-} /* namespace Fossilizid */
+} /* namespace circle */
 
-#endif //_context_h
+#endif //_string_h

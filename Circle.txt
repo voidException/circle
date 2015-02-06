@@ -18,7 +18,7 @@ import/reload()/path
 
 get() return variable function type 
 
-class/creatype c++/getattr return variable function
+class/creatype c++/getattr return variable function/structure destruct 
 
 value type/int float string bool
 

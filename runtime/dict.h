@@ -11,16 +11,12 @@
 #include <string>
 
 #include "object.h"
+#include "typedef.h"
 
 namespace circle{
 
-class iterator;
-
 class dict : public object{
 public:
-	dict();
-	~dict();
-
 	object * get(std::string key);
 
 	void add(std::string key, object * e);

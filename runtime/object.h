@@ -9,16 +9,12 @@
 
 namespace circle{
 
-class dict;
-
 class object{
-public:
-	object();
-	~object();
-
-private:
-	dict * members;
-
+	enum type {
+		classtype,
+		functype,
+		variable,
+	};
 };
 
 } /* namespace circle */
